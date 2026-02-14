@@ -1,0 +1,70 @@
+body {
+    background-color: #ffebee;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+main {
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(255, 138, 128, 0.3);
+}
+
+h1 {
+    color: #d32f2f;
+    margin-bottom: 2rem;
+}
+
+.btns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#yessir {
+    background-color: #ff5252;
+    color: white;
+}
+
+#nooo {
+    background-color: #b0bec5;
+    color: white;
+    position: relative;
+}
+
+.author {
+    font-weight: bold;
+    color: #ff8a80;
+}
+
+/* Moving Hearts */
+.heart {
+    position: absolute;
+    color: #ff1744;
+    font-size: 20px;
+    user-select: none;
+    animation: float 5s linear infinite;
+    opacity: 0.6;
+}
+
+@keyframes float {
+    0% { transform: translateY(100vh) rotate(0deg); }
+    100% { transform: translateY(-10vh) rotate(360deg); }
+}
