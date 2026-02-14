@@ -15,7 +15,7 @@ noBtn.addEventListener('mouseover', () => {
 
 // 2. Action when she clicks "SÍ"
 yesBtn.addEventListener('click', () => {
-    alert('Obvio que si ❤️');
+    alert('Gracias por decir si❤️');
 });
 
 // 3. Logic for the floating hearts
